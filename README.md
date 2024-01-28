@@ -73,3 +73,15 @@ time ./1bn.sh
 ./1bn.sh  2.91s user 0.24s system 88% cpu 3.574 total
 ```
 
+### common lisp
+
+For 1000000 (1/1000<sup>th</sup> of a billion).
+
+```none
+time clisp 1bn.lisp
+1000000
+clisp 1bn.lisp  3.31s user 0.01s system 99% cpu 3.346 total
+```
+
+
+
