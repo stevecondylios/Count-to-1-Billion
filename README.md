@@ -46,3 +46,30 @@ time node 1bn.js
 node 1bn.js  0.47s user 0.01s system 98% cpu 0.481 total
 ```
 
+### crystal
+
+```none
+time crystal run 1bn.cr
+1000000000
+crystal run 1bn.cr  1.19s user 0.13s system 103% cpu 1.270 total
+```
+
+### rust
+
+```none
+time rustc 1bn.rs && ./1bn                                                                                                                   <<<
+rustc 1bn.rs  0.10s user 0.04s system 163% cpu 0.087 total
+1000000000
+```
+
+### bash
+
+For 1000000 (1/1000<sup>th</sup> of a billion).
+
+```none
+chmod +x 1bn.sh
+time ./1bn.sh
+1000000
+./1bn.sh  2.91s user 0.24s system 88% cpu 3.574 total
+```
+
